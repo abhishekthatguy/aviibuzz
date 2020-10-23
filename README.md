@@ -3,3 +3,6 @@
 #the project.
 # beThere
 # beThere
+
+# this line i am testing for conflict resolver in git repository
+# I am Learning Git and Its benifits 
