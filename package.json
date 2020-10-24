@@ -15,16 +15,16 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.0",
     "react-video-js-player": "^1.1.1"
   },
   "scripts": {
     "start": "craco start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
-    "eject":"craco eject"
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": "react-app"
