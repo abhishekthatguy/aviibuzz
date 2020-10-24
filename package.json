@@ -1,5 +1,4 @@
 {
-  "homepage": "https://aviisinghmaxx.github.io/aviisinghmaxx/",
   "name": "be_there",
   "version": "0.1.0",
   "private": true,
@@ -15,16 +14,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.0",
+    "react-scripts": "^3.4.3",
     "react-video-js-player": "^1.1.1"
   },
   "scripts": {
     "start": "craco start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject"
+    "test": "craco test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,8 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
