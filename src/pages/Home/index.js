@@ -39,10 +39,13 @@ export default class Home extends Component {
                     <p>INDIAN CREATORS, ARTISTS & CELEBS</p>
                     <h1>Talk . Watch . stream . Support!</h1>
                     <div className="app-store-div">
-                        <img src='/assets/playstore.png' alt='play-store-logo' />
-                        <img src='/assets/istore.png' alt='istore-logo' />
+                    <img src={process.env.PUBLIC_URL + '/assets/playstore.png'} alt='play-store-logo' />
+                    {/* remove all process.env.PUBLIC_URL before deployment */}
+
+                        {/* <img src='/assets/playstore.png' alt='play-store-logo' /> */}
+                        <img src={process.env.PUBLIC_URL +'/assets/istore.png'} alt='istore-logo' />
                     </div>
-                    <img src='/assets/phone_top.png' className='phone-img' alt='phone'></img>
+                    <img src={process.env.PUBLIC_URL +'/assets/phone_top.png'} className='phone-img' alt='phone'></img>
                 </div>
                 <div className='container use-case-section'>
                     <div>
@@ -55,7 +58,7 @@ export default class Home extends Component {
                             </Col>
                             <Col className="border-right border" xs={{ span: 24,  }} lg={{ span: 12,  }} md={{span: 12}}>
                                 <div className='img-div'>
-                                    <img src='/assets/vector_1.png' alt='' width="100%" />
+                                    <img src={process.env.PUBLIC_URL +'/assets/vector_1.png' } alt='' width="100%" />
                                 </div>
                             </Col>
                         </Row>
@@ -68,7 +71,7 @@ export default class Home extends Component {
                             </Col>
                             <Col xs={{ span: 24,  }} lg={{ span: 12,  }} md={{span: 12}}>
                                 <div className='img-div'>
-                                    <img src='/assets/vector_2.png' alt='' width="100%" />
+                                    <img src={process.env.PUBLIC_URL + '/assets/vector_2.png'} alt='' width="100%" />
                                 </div>    
                             </Col>
                         </Row>
@@ -81,7 +84,7 @@ export default class Home extends Component {
                             </Col>
                             <Col xs={{ span: 24,  }} lg={{ span: 12,  }} md={{span: 12}}>
                                 <div className='img-div'>
-                                    <img src='/assets/vector_3.png' alt='' width="100%" />
+                                    <img src={process.env.PUBLIC_URL +'/assets/vector_3.png'} alt='' width="100%" />
                                 </div>
                             </Col>
                         </Row>
@@ -94,7 +97,7 @@ export default class Home extends Component {
                             </Col>
                             <Col className="border-left border" xs={{ span: 24,  }} lg={{ span: 12,  }} md={{span: 12}}>
                                 <div className='img-div'>
-                                    <img src='/assets/vector_4.png' alt='' width="100%" />
+                                    <img src={process.env.PUBLIC_URL +'/assets/vector_4.png'} alt='' width="100%" />
                                 </div>
                             </Col>
                         </Row>

@@ -86,7 +86,7 @@ export default class HeaderComp extends Component {
             <Header className={isScrolled ? "header-blue" : ''}>
                 <div className="container" style={{display: 'flex', justifyContent: 'space-between'}}>
                     <div style={{display: 'flex'}}>
-                        <div className="logo" ><img src='assets/white_logo.png' alt='logo' /></div>
+                        <div className="logo" ><img src={process.env.PUBLIC_URL +'/assets/white_logo.png'} alt='logo' /></div>
                         <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
                             {/* <Menu.Item key="mail" icon={<MailOutlined />}>
                                 Navigation One
@@ -103,11 +103,7 @@ export default class HeaderComp extends Component {
                                 Social Media Stars
                                 </Link>
                             </Menu.Item>
-                            {/* <Menu.Item key="Social Media">
-                                <Link to="https://ant.design">
-                                    Social Media Stars
-                                </Link>
-                            </Menu.Item>  */}
+                           
                             <Menu.Item key="Experience">
                                 <Link to="https://ant.design">
                                       Experience
@@ -148,7 +144,7 @@ export default class HeaderComp extends Component {
                     </div>
                 </div>
                 <Drawer
-                    title={<img src='assets/white_logo.png' alt='logo' />}
+                    title={<img src={process.env.PUBLIC_URL +'assets/white_logo.png'} alt='logo' />}
                     placement="left"
                     closable={false}
                     onClose={this.onCloseDrawer}
