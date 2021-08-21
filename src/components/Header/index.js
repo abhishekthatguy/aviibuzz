@@ -75,6 +75,11 @@ export default class HeaderComp extends Component {
                 </a>
               </Menu.Item>
               <Menu.Item>
+                <a  rel="noopener noreferrer" href="/changeEmail">
+                 Change Email
+                </a>
+              </Menu.Item>
+              <Menu.Item>
                 <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
                   Logout
                 </a>

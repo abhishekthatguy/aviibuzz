@@ -7,6 +7,7 @@ import {
 import Home from "./Home";
 import Celebrities from "./Celebrities";
 import Login from './Login';
+import ChangeEmail from './ChangeEmail';
 
 export default function Routes() {
   return (
@@ -16,6 +17,9 @@ export default function Routes() {
       </Route>
       <Route path="/login">
         <Login />
+      </Route>
+      <Route path="/changeEmail">
+        <ChangeEmail />
       </Route>
       <Route path="/">
         <Home />

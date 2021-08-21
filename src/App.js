@@ -15,7 +15,7 @@ const { Content } = Layout;
 const App = () => (
   <Router>
     <Layout>
-      <Header />
+      {/* <Header /> */}
       <Content>
         <Routes />
       </Content>
