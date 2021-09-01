@@ -48,6 +48,7 @@ export default class HeaderComp extends Component {
         this.setState({
             current: e.key,
         });
+       // window.href
     };
 
     showDrawer = () => {
