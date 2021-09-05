@@ -53,7 +53,7 @@ p {
 
 @media only screen and (max-width: 766px) {
     .header {
-        padding-top: 25px;
+        padding-top: 0px;
     }
 }
 
@@ -159,9 +159,11 @@ nav ul a:active {
 
 
 
+/*
 .content {
     padding: 50px 2% 250px;
 }
+*/
 
 
 @-webkit-keyframes scroll {
@@ -324,27 +326,21 @@ main section {
 /*    z-index: 99;*/
 
 }
-
 /*about section styling*/
-
-.dflex {
-    display: flex;
-    flex-wrap: wrap;
+section#factsSkillSet{
+    position: relative;
+    z-index: 9;
+/*
+    background: url("../img/img6.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+*/
 }
 
-.dflex .aboutImage,
-.dflex .aboutText {
-    width: 50%;
-    flex-grow: 1;
-    margin: 0px;
-    padding: 0px;
-}
 
-.dflex .aboutText {
-    width: 50%;
-    flex-grow: 1;
-    padding: 65px 20px;
-}
+
 
 /*progress bar stylling */
 
@@ -371,19 +367,6 @@ main section {
 
 /*================*/
 
-.factsSkillSet {}
-
-.fact {
-    width: 50%;
-    align-self: center;
-    padding: 10px;
-}
-
-.skillSet {
-    width: 50%;
-    margin: 0px 0px;
-}
-
 .progressBar {
     position: relative;
     width: 100%;
@@ -391,6 +374,9 @@ main section {
     background: #eeeeee;
     margin-bottom: 40px;
     border-radius: 5px;
+}
+.skillSet{
+    width: 100%;
 }
 
 .skillSet .title {
@@ -529,7 +515,9 @@ a:hover{
     color: #6c6d83;
 }
 /*temporary code to hide incomplete pannel*/
-#portfolio,#services,#testimonial{
+/*#portfolio,*/
+/*#services,*/
+#testimonial{
     display: none;
 }
 

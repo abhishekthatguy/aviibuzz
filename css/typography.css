@@ -1,0 +1,43 @@
+/*text grey    #949494 */
+/*text black   #404040 */
+/*text yellow  #f8bf45 */
+
+/*
+Main heighlight heading color,
+button border color, botton background color
+#f8bf45 //yellow
+
+*/ 
+/*
+primary fontcolor : #ffffff
+highlight primary color : #f8bf45
+*/
+/*
+body color #ffffff //white
+*/
+
+/***********custom css to handle typography and color */
+
+
+
+.text-yellow{
+    color:#f8bf45;
+}
+.text-yellow:hover{
+    color:#404040;
+}
+.text-grey{
+    color:#949494;
+}
+.text-yellow:hover{
+    color:#404040;
+}
+.text-black{
+    color:#404040;
+}
+.text-black:hover{
+    color:#ffffff;
+}
+.text-white:hover,.text-white:active{
+    color:#f8bf45 !important;
+}
