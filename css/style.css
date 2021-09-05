@@ -375,9 +375,11 @@ section#factsSkillSet{
     margin-bottom: 40px;
     border-radius: 5px;
 }
+/*
 .skillSet{
     width: 100%;
 }
+*/
 
 .skillSet .title {
     position: absolute;
@@ -406,6 +408,8 @@ section#factsSkillSet{
     position: absolute;
     border-radius: 5px;
     background-color: #f9be12;
+/*    temp value*/
+    width:87%;
 }
 a:hover{
     text-decoration:none;

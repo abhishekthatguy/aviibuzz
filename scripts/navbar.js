@@ -8,7 +8,7 @@ $(window).scroll(function () {
     } else {
         $('.header').removeClass('sticky');
         $(".nav-link").addClass('text-white');
-        $('#logoImg').attr('src','../img/logo_Avii.png');
+        $('#logoImg').attr('src','../img/logoavii.png');
     }
 });
 
