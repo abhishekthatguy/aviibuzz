@@ -18,7 +18,9 @@ body color #ffffff //white
 
 /***********custom css to handle typography and color */
 
-
+.text-primary{
+    color:#f8bf45 !important;
+}
 
 .text-yellow{
     color:#f8bf45;

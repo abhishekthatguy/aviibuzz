@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fav Icon Link-->
     <link rel="icon" href="img/fav_icon.png" type="image/gif" sizes="16x16">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- external style sheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,15 +23,15 @@
 </head>
 
 <body>
-<header class="header">
-<nav class="navbar navbar-expand-lg">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent text-primary">
 <a class="navbar-brand" href="#home">
     <img src="img/logoavii.png" class="d-inline-block align-top" width='40%' alt="logo" id="logoImg">
   </a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="collapse navbar-collapse" id="navigationBar">
                 <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a href="#home" class="nav-link text-white">Home <span class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a class="nav-link text-white" href=".about">About</a></li>
@@ -45,7 +45,7 @@
                     </ul>
                     </div>
                 </nav>
-    </header>
+
     
 <div class="btn-toolbar social-container" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group-vertical" role="group" aria-label="First group">
@@ -69,26 +69,24 @@
     <a type="button" class="btn btn-outline-primary  btn-lg" href="https://github.com/aviibuzz" target="_blank"><img class='img-fluid' src='img/icons/github-logo-silhouette-in-a-square.png'/></a>
   </div>
 </div>
-
-
-        <section id="home">
-        <div id="particle-canvas"></div>
+<div id="particle-canvas"></div>
+  <header id="home" class="text-center w-100 position-relative"> 
         <div class="intro_text">
-            <h1>Hello,  I am <span class="highlight">Abhishek Singh.</span></h1>
+            <h1 class="display-3 text-white">Hello,  I am <span class="text-primary">Abhishek Singh.</span></h1>
             
-            <p>" <span class="txt-type typed-block typed-txt" data-delay="1200" data-words='["I am a Front-end Developer", "I write code to earn money &","Travel to see my surroundings", "Lets Work Together"]'></span> "</p>
+            <p class="text-white lead">" <span class="txt-type typed-block typed-txt" data-delay="1200" data-words='["I am a Front-end Developer", "I write code to earn money &","Travel to see my surroundings", "Lets Work Together"]'></span> "</p>
             
             <!-- Read More -->
             <button type="button" class="btn btn-outline-primary btn-lg primaryActionBtn">About Me</button>
         </div>
-        <div class="hero_background_image">
-            <img src="img/img2.jpg" alt="Background Image">
+        <div class="hero_background_image position-fixed mh-100 w-100">
+            <img src="img/img2.jpg" alt="Background Image" class="img-fluid w-100 mw-100 mh-100 h-100">
         </div>
-    </section>
-    <main class="content">
-        <section class="about" id="#aboutSection">
+       </header>
+    <main class="content position-relative">
+        <section class="about bg-secondary" id="#aboutSection">
            <div class="container-fluid">
-            <div class="d-flex p-2 my-4 justify-content-between align-items-center">
+            <div class="d-md-flex p-2 justify-content-between align-items-center">
                 <div class="order-md-1 ">
                     <img src="img/Archive/square/1.jpg" class="img-fluid w-100" alt="image">
                 </div>
@@ -101,7 +99,7 @@
                         Aside from my job, I like to create and contribute to open-source projects. That helps me to learn a ton of new stuff, grow as a developer, and support other open-source projects. I enjoy working and helping people to bring a digital presence to their business, personal brand, or portfolio. 
                     </p>
                     <p>In my free time, you can find me in mountains, at historical places or any local events. I love to discover & explore new places, connecting with people which adds to my learning experience. Connect & share is one of the new hobbies that I discover from my travelling nature.</p>
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-md-flex justify-content-between align-items-center">
                     <div>
                     <h3 class="text-info">Basic Informations</h3>
                     <ul class="list-unstyled">
@@ -136,10 +134,10 @@
             </div>
             </div>
         </section>
-          <section id="services" class="">
-  <div class="jumbotron jumbotron-fluid">
+<section id="services" class="bg-secondary">
+  <div class="jumbotron jumbotron-fluid bg-secondary mb-0">
   <div class="container">
-<h1 class="font-weight-bold">What I can do</h1>
+<h1 class="font-weight-bold display-5 text-primary">What I can do</h1>
 <div class="card-group">
 <div class="card text-center">
   <img class="card-img-top w-25 mx-auto my-2" src="img/groupwebsite.png" alt="Card image cap">
@@ -187,9 +185,9 @@
           </section>
           
           
-           <section id="">
+           <section id="factsnskill" class="bg-secondary">
                <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center my-4">
+                <div class="d-md-flex justify-content-between align-items-center">
                     <div class="fact w-50">
                         <h1 class="font-weight-bold">Facts & Skillset</h1>
                         <p class="lead">
@@ -198,19 +196,19 @@
                         </p>
                         <p>I have a thorough understanding and solid experience in the software development lifecycle process. I have worked in developer roles that utilized agile and waterfall methodologies. I also have experience collaborating in large scale projects with globally dispersed teams, including both on and off shore development</p>
                     </div>
-                    <div class="order-md-1">
+                    <div class="order-md-2">
                     <img src="img/Archive/square/2.jpg" class="img-fluid rounded w-100" alt="image">
                 </div>
                 </div>
                </div>
         </section>
-          <section id="factsSkillSet">
+          <section class="bg-transparent text-white">
           <div class="container-fluid">
 <p class="text-info">
 Skill level in each language varies. </p>
-                   <div class="d-flex justify-content-between align-items-top">
-                    <div class="skillSet w-100 my-2 mr-2">
-                        <h3 class="text-secondary mb-4">Markup & Language</h3>
+                   <div class="d-md-flex justify-content-between align-items-top">
+                    <div class="skillSet w-100 mr-2">
+                        <h3 class="text-white mb-4">Markup & Language</h3>
                          <div class="progressBar">
                             <div class="title htmlColor">HTML5</div>
                             <div class="progress html"></div>
@@ -226,7 +224,7 @@ Skill level in each language varies. </p>
                             <div class="progress angularjs"></div>
                             <div class="progress_value">20%</div>
                         </div>
-                        <h3 class="text-secondary mb-4">Css Library & PreProcessor</h3>
+                        <h3 class="text-white mb-4">Css Library & PreProcessor</h3>
                         <div class="progressBar">
                             <div class="title htmlColor">Bootstrap 3,4,5</div>
                             <div class="progress html"></div>
@@ -247,7 +245,7 @@ Skill level in each language varies. </p>
                             <div class="progress js"></div>
                             <div class="progress_value">80%</div>
                         </div>
-                        <h3 class="text-secondary mb-4">Code Management & Documentation</h3>
+                        <h3 class="text-white mb-4">Code Management & Documentation</h3>
                         <div class="progressBar">
                             <div class="title jsColor">Git</div>
                             <div class="progress jquery"></div>
@@ -276,7 +274,7 @@ Skill level in each language varies. </p>
                         
                     </div>
                     <div class="skillSet w-100 my-2 mr-2">
-                        <h3 class="text-secondary mb-4">Libraries & Framework</h3>
+                        <h3 class="text-white mb-4">Libraries & Framework</h3>
                          <div class="progressBar">
                             <div class="title htmlColor">React Js</div>
                             <div class="progress html"></div>
@@ -312,7 +310,7 @@ Skill level in each language varies. </p>
                             <div class="progress js"></div>
                             <div class="progress_value">80%</div>
                         </div>
-                        <h3 class="text-secondary mb-4">Selected Tools I worked on</h3>
+                        <h3 class="text-white mb-4">Selected Tools I worked on</h3>
                         <div class="progressBar">
                             <div class="title jsColor">github</div>
                             <div class="progress jquery"></div>
@@ -354,11 +352,11 @@ Skill level in each language varies. </p>
                     </div>
         </section>
           
-         <section >
-         <div class="jumbotron jumbotron-fluid">
-        <div class="d-flex justify-content-around align-items-center">
+         <section>
+         <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="d-md-flex justify-content-around align-items-center">
            <div class="text-center">
-            <img src="img/Archive/square/3.jpg" alt="image here" class="shadow img-fluid rounded-circle w-50 ">
+            <img src="img/Archive/square/3.jpg" alt="image here" class="shadow img-fluid rounded-circle w-50 mx-auto">
             </div>
      <div class="w-100">
          <p class="lead">
@@ -369,9 +367,9 @@ Skill level in each language varies. </p>
              </div>
              </div>
              </div>
-            <div class="d-flex justifyBetween">
-             <div class="card skillCard">
-    <img class="card-img-top" src="/img/groupmulti.png" alt="Card image" 
+            <div class="d-md-flex justify-content-between bg-primary">
+    <div class="card bg-primary text-center">
+    <img class="card-img-top w-25 mx-auto" src="/img/groupmulti.png" alt="Card image" 
          >
     <div class="card-body">
       <h4 class="card-title">Multi-skilled</h4>
@@ -379,8 +377,8 @@ Skill level in each language varies. </p>
       
     </div>
   </div>
-                 <div class="card skillCard">
-    <img class="card-img-top" src="/img/group24hrs.png" alt="Card image" 
+<div class="card bg-primary text-center">
+    <img class="card-img-top w-25 mx-auto" src="/img/group24hrs.png" alt="Card image" 
          >
     <div class="card-body">
       <h4 class="card-title">Versatile</h4>
@@ -388,16 +386,16 @@ Skill level in each language varies. </p>
       
     </div>
   </div>
-                 <div class="card skillCard">
-    <img class="card-img-top" src="/img/grouplovensupport.png" alt="Card image">
+<div class="card bg-primary text-center">
+    <img class="card-img-top w-25 mx-auto" src="/img/grouplovensupport.png" alt="Card image">
     <div class="card-body">
       <h4 class="card-title">Dedicated</h4>
       <p class="card-text"> I am diligent, conscientious, and extremely dedicated to every task that I am given. It is of the utmost importance to me that my clients are satisfied with what I deliver.</p>
       
     </div>
   </div>
-                 <div class="card skillCard">
-    <img class="card-img-top" src="/img/grouppen.png" alt="Card image" >
+                 <div class="card bg-primary text-center">
+    <img class="card-img-top w-25 mx-auto" src="/img/grouppen.png" alt="Card image" >
     <div class="card-body">
       <h4 class="card-title">Efficient</h4>
       <p class="card-text">I always explore ways of improving my efficiency, whether it’s using task automation tools such as GruntJS or simply being concise in communication</p>
@@ -406,96 +404,83 @@ Skill level in each language varies. </p>
   </div>
             </div>
         </section>
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid mb-0 bg-transparent">
   <div class="container text-center">
-    <h1 class="display-4">I Am Available For Immediate Hire</h1>
+    <h1 class="display-5 text-primary">I Am Available For Immediate Hire</h1>
     <p class="lead"><button type="button" class="btn btn-outline-primary btn-lg primaryActionBtn">Hire Me</button></p>
   </div>
 </div>
-      <section id="portfolio" class="text-center">
+      <section id="portfolio" class="text-center bg-secondary text-secondary py-5">
            <div class="container">
-            <h1>Major Projects</h1>
+            <h1 class="font-weight-bold">Major Projects</h1>
             <p class="lead">I have worked with a number of high profile clients (both directly and indirectly) and I am comfortable working under pressure to complex specifications.I take great pride in my work, and I always try to better myself with every project I work on. I like to write semantic, cross-browser-compatible code by hand that is re-useable, maintainable, and easy to understand</p>
-<ul class="nav nav-pills justify-content-center flex-columns" id="pills-tab" role="tablist">
+<ul class="nav nav-pills justify-content-center flex-columns my-5" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+    <a class="nav-link secondaryActionBtn active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ERP & PWA </a>
+    <a class="nav-link secondaryActionBtn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ERP & PWA </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Websites</a>
+    <a class="nav-link secondaryActionBtn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Websites</a>
   </li>
 </ul>
 <div class="tab-content mx-auto" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-<div class="row">
-<div class="col-sm-4">
+<div class="card-columns">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/accredoteal.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/accredoteal.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Accredo</h5>
     <p class="card-text">Accredo is your specialty pharmacy. Specialty-trained pharmacists, as well as nurses and a whole team of passionate people are here to give you the personalized care and guidance you need to manage your therapy.</p>
     <a href="https://www.accredo.com/" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
-    
-   
-      </div>
-      <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/nygsslogo.jpeg" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/nygsslogo.jpeg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">NYGGS Automation Suite
 </h5>
-    <p class="card-text">NYGGS Automation Suites is designed to integrate all departments in an organization and introduce behavioral change across all the departments in the company. NYGGS consists umbrella consists tools like - NYGGS HRMS, NYGGS CRM, NYGGS CMMS, NYGGS SCM , NYGGS B&P , NYGGS TMS and NYGGS SCM.. Our suite is designed to handle complex solutions in effective ways.</p>
+    <p class="card-text">NYGGS Automation Suites is designed to integrate all departments in an organization and introduce behavioral change across all the departments in the company. NYGGS consists umbrella consists tools.</p>
     <a href="https://www.nyggs.com/hrm/" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
-    
-   
-      </div>
-      <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/securedcomlogo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/securedcomlogo.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Mercury Meeting System</h5>
-    <p class="card-text">MERCURY MEETING Conduct secure meetings with colleagues around the globe from your browser or mobile phone. High definition video with seamless end-to-end encryption and simple, powerful controls.Mercury meeting is a meeting application with multiple participants . it consists of two section on is creator and other is participants. it is a video conferencing application that helps us to initialise or join meeting .</p>
+    <p class="card-text">MERCURY MEETING Conduct secure meetings with colleagues around the globe from your browser or mobile phone. High definition video with seamless end-to-end encryption and simple, powerful controls.</p>
     <a href="https://securedcommunications.com/mercury-meeting.html" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
     
-   
-      </div>
-       <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/securedcomlogo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/nyggs_payroll_software_logo.jpeg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Nyggs Billing System</h5>
-    <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
+    <h5 class="card-title">Nyggs Sub Modules</h5>
+    <p class="card-text">Sub modules like - NYGGS HRMS, NYGGS CRM, NYGGS CMMS, NYGGS SCM , NYGGS B&P , NYGGS TMS and NYGGS SCM , NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
 </p>
     <a href="https://www.nyggs.com/hrm/" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
     
-   
-      </div>
-      <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/panchilogo.svg" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/panchilogo.svg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Panchhi.com</h5>
-    <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
+    <p class="card-text">
+    One-stop solutions at पंछी.com
+We focus on the nature of your business and what you need for a fruitful online presence to ultimately push revenues further up.
+   provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
 </p>
     <a href="https://www.nyggs.com/hrm/" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
     
    
-      </div>
-      <div class="col-sm-4">
+      
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/rapidsoftlogo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/rapidsoftlogo.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Rapidsoft Technologies</h5>
     <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
@@ -505,10 +490,8 @@ Skill level in each language varies. </p>
 </div>
     
    
-      </div>
-      <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/watsoologo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/watsoologo.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Watsoo Express</h5>
     <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
@@ -517,11 +500,9 @@ Skill level in each language varies. </p>
   </div>
 </div>
     
-   
-      </div>
-       <div class="col-sm-4">
+
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/nkcprojectlogo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/nkcprojectlogo.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">NKC Projects</h5>
     <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
@@ -530,11 +511,8 @@ Skill level in each language varies. </p>
   </div>
 </div>
     
-   
-      </div>
-      <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/logoavii.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/logoavii.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Personal Website Template</h5>
     <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
@@ -543,9 +521,6 @@ Skill level in each language varies. </p>
   </div>
 </div>
     
-   
-      </div>
-       <div class="col-sm-4">
 <div class="card text-center">
   <h1 class="text-info">Tasdeek</h1>
   <div class="card-body">
@@ -555,12 +530,8 @@ Skill level in each language varies. </p>
     <a href="https://www.nyggs.com/hrm/" class="btn btn-outline-primary btn-sm secondaryActionBtn" target="_blank">Explore More</a>
   </div>
 </div>
-    
-   
-      </div>
-       <div class="col-sm-4">
 <div class="card text-center">
-  <img class="card-img-top img-fluid" src="img/projectslogo/gs1logo.png" alt="Card image cap">
+  <img class="card-img-top img-fluid w-50 mx-auto" src="img/projectslogo/gs1logo.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">GS1</h5>
     <p class="card-text">NYGGS suite streamlines operation and collaboration effectively across the department. NYGGS provides you real-time information about all process and analytical data, which helps companies to gain financial stability and forecasting.
@@ -574,7 +545,6 @@ Skill level in each language varies. </p>
       </div>
   </div>
 </div>
-          </div>
         </section>
        
          </main>
@@ -743,54 +713,70 @@ Skill level in each language varies. </p>
 </div>
     </section>
     <!--Bottom Footer-->
-		<div class="bottom section-padding">
+    <footer class="w-100 text-white">
+       <div class="container-fluid">
+        
+        <div class="d-flex justify-content-between align-items-center w-100 mw-100  p-5">
+            <div class="text-center">
+                <img src="img/logoavii.png" class="img-fluid w-75" alt="logo here">
+            </div>
+            <div class="text-center">
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#services">Services</a>
+  </li>
+</ul>
+            </div>
+            <div class="text-center">
+  <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="#portfolio">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#blog">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+  </li>
+</ul>
+            </div>
+            <div class="text-center">
+                <address>
+                    DLF Phase-3, Gurgaon 
+                    <br/>
+                    India (122002)
+                </address>
+            </div>
+            
+        </div>   
+       </div>
+    
+		<div class="bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="copyright">
-							<p>© <span>2020</span> <a href="#" class="transition">Aviisinghmaxx</a> All rights reserved.</p>
+							<p>© <span>2021</span> <a href="#home" class="transition">Aviibuzz</a> All rights reserved.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		</footer>
 <!--Bottom Footer-->
 
-<!--modal window for project details-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--ended-->
 
 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--external scripting-->
 <script src="scripts/navbar.js"></script>
 <script src="scripts/particle.js"></script>

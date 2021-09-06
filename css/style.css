@@ -35,6 +35,7 @@ p {
     display: block;
 }
 */
+/*
 .header {
     position: fixed;
     top: 0px;
@@ -50,27 +51,42 @@ p {
     padding-bottom: 6px;
     box-shadow: 0px 1px 5px 1px rgba(16, 16, 16, 0.05);
 }
+*/
+header{
+    height: 100vh;
+    max-width: 100%;
+}
 
 @media only screen and (max-width: 766px) {
+/*
     .header {
         padding-top: 0px;
     }
+*/
 }
 
+/*
 .open-nav {
     max-height: 400px !important;
 }
+*/
 
-.open-nav .mobile-toggle {
+.navbar .navbar-toggler.collapsed {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+.navbar .navbar-toggler{
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 }
 
+/*
 .sticky {
     color:#8f8f8f;
     background: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #f8bf45;
 }
+*/
 
 
 @media only screen and (max-width: 766px) {
@@ -81,19 +97,24 @@ p {
 
 
 @media only screen and (max-width: 766px) {
+/*
     nav {
         width: 100%;
     }
+*/
 }
 
+/*
 nav ul {
     list-style: none;
     overflow: hidden;
     text-align: right;
     float: right;
 }
+*/
 
 @media only screen and (max-width: 766px) {
+/*
     nav ul {
         padding-top: 10px;
         margin-bottom: 22px;
@@ -101,34 +122,42 @@ nav ul {
         text-align: center;
         width: 100%;
     }
+*/
 }
 
+/*
 nav ul li {
     display: inline-block;
     margin-left: 35px;
     line-height: 4.5;
 }
+*/
 
 @media only screen and (max-width: 766px) {
+/*
     nav ul li {
         width: 100%;
         padding: 7px 0;
         margin: 0;
     }
+*/
 }
 
+/*
 nav ul a {
-/*    color: #888888;*/
+    color: #888888;
     text-transform: capitalize;
-/*    font-size: 14px;*/
+    font-size: 14px;
     font-weight: bolder;
 }
+*/
 
 nav ul a:hover,
 nav ul a:active {
     color: #f8bf45;
 }
 
+/*
 .mobile-toggle {
     display: none;
     cursor: pointer;
@@ -156,6 +185,7 @@ nav ul a:active {
     background: #8f8f8f;
     display: block;
 }
+*/
 
 
 
@@ -199,6 +229,7 @@ nav ul a:active {
 /*
 particle animation styling*/
 
+/*
 section#home {
     position: relative;
     width: 100%;
@@ -206,8 +237,9 @@ section#home {
     overflow: hidden;
     text-align: center;
 }
+*/
 
-section#home > .intro_text {
+#home > .intro_text {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -216,6 +248,7 @@ section#home > .intro_text {
     transform: translate(-50%, -50%);
 }
 
+/*
 section#home > .intro_text > h1 {
     font-size: 65px;
     font-weight: 500;
@@ -225,11 +258,15 @@ section#home > .intro_text > h1 {
     margin: 0px 0px 22px 0px;
     color: rgba(255, 255, 255, 1);
 }
+*/
 
+/*
 section#home > .intro_text > h1 > span.highlight {
     color: #f8bf45;
 }
+*/
 
+/*
 section#home > .intro_text > .more_about_me,
 div.myBtn {
     width: 160px;
@@ -239,47 +276,50 @@ div.myBtn {
     border: 2px solid rgba(255, 205, 60, 1);
     transition: 0.3s ease;
 }
+*/
 
+/*
 section#home > .intro_text > .more_about_me:hover,
 div.myBtn:hover {
     background: transparent;
 }
+*/
 
+/*
 div.myBtn:hover {
     background: black;
 }
+*/
 
+/*
 section#home > .intro_text > p {
     width: 80%;
-/*    font-family: "Montserrat", sans-serif;*/
     font-size: 28px;
     line-height: 42px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
     margin: 0px auto 48px auto;
 }
+*/
 
+/*
 section#home > .intro_text > p > span.highlight {
     color: #f8bf45;
 }
+*/
 
-section#home > .hero_background_image {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
+#home > .hero_background_image {
     top: 0;
     left: 0;
     z-index: 1;
     overflow: hidden;
-    background: rgba(1, 1, 1, 0.3);
 }
 
-section#home > .hero_background_image > img {
-    width: 100%;
-    min-height: 100%;
+#home > .hero_background_image > img {
     opacity: 0.18;
 }
 
+/*
 section#home > .intro_text > .more_about_me > a,
 div.myBtn a {
     display: block;
@@ -287,9 +327,11 @@ div.myBtn a {
     height: 100%;
     text-decoration: none;
 }
+*/
 
 
 
+/*
 section#home > .intro_text > .more_about_me > a > span,
 div.myBtn span {
     display: block;
@@ -303,11 +345,14 @@ div.myBtn span {
     color: rgba(1, 1, 1, 1);
     transition: 0.3s ease;
 }
+*/
+/*
 
 section#home > .intro_text > .more_about_me > a > span:hover,
 div.myBtn span:hover {
     color: white;
 }
+*/
 
 #particle-canvas {
     width: 100%;
@@ -316,8 +361,8 @@ div.myBtn span:hover {
 }
 
 main {
-    background: rgba(255, 255, 255, 1);
-    position: relative;
+/*    background: rgba(255, 255, 255, 1);*/
+/*    position: relative;*/
     z-index: 99;
 }
 
@@ -389,7 +434,7 @@ section#factsSkillSet{
     float: left;
     font-weight: normal;
     top: -24px;
-    color: black;
+/*    color: black;*/
 /*    z-index: 10000;*/
 }
 
@@ -398,7 +443,7 @@ section#factsSkillSet{
     float: right;
     padding-right: 10px;
     font-weight: bold;
-    color: #000000;
+/*    color: #000000;*/
 /*    z-index: 10000;*/
     top: -25px;
 }
@@ -414,9 +459,11 @@ section#factsSkillSet{
 a:hover{
     text-decoration:none;
 }
+/*
 .section-padding {
 	padding: 60px 0;
 }
+*/
 
 /*social media container*/
 .social-container{
@@ -494,6 +541,10 @@ a:hover{
 	}
 
 /*footer*/
+footer{
+    position: absolute;
+    
+}
 .bottom {
     background-color: #0a1c2e;
 }
@@ -528,6 +579,7 @@ a:hover{
 .justifyBetween{
     justify-content: space-between;
 }
+/*
 .skillCard{
     width: 300px;
     max-width: 300px;
@@ -538,6 +590,7 @@ a:hover{
    width: 70%;
     margin:0px auto;
 }
+*/
 
 
 @include media-breakpoint-up(sm) {

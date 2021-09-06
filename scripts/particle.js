@@ -51,7 +51,7 @@
         this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g = this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas.height = this.i.size.height, this.l(this.i, {
             position: "fixed"
         }), this.l(this.canvas, {
-            "z-index": "20",
+            "z-index": "2",
             position: "fixed",
             left:"0px"
         }), window.addEventListener("resize", function () {
@@ -100,9 +100,6 @@
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
     particleColor: '#ffffff',
-//    background: rgb(0 0 0 / 50%),
-//      background: 'https://cdn.pixabay.com/photo/2016/03/31/08/49/man-1292269_960_720.jpg',
-//    background:'../img/img2.jpg',
     interactive: true,
     speed: 'medium',
     density: 'medium'

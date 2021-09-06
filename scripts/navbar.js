@@ -2,13 +2,18 @@
 $(window).scroll(function () {
 
     if ($(window).scrollTop() > 100) {
-        $('.header').addClass('sticky');
+        $('.navbar').addClass('bg-secondary text-secondary');
         $('.nav-link').removeClass('text-white');
         $('#logoImg').attr('src','../img/logo.png');
-    } else {
-        $('.header').removeClass('sticky');
+    } else{
+        $('.navbar').removeClass('bg-secondary text-secondary');
         $(".nav-link").addClass('text-white');
         $('#logoImg').attr('src','../img/logoavii.png');
+    }
+     if ($(window).scrollTop() > 1000) {
+        $('header').addClass('invisible');
+    } else{
+        $('header').removeClass('invisible');
     }
 });
 
