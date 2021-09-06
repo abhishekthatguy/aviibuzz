@@ -4,11 +4,11 @@ $(window).scroll(function () {
     if ($(window).scrollTop() > 100) {
         $('.navbar').addClass('bg-secondary text-secondary');
         $('.nav-link').removeClass('text-white');
-        $('#logoImg').attr('src','./img/logo.png');
+        $('#logoImg').attr('src','https://aviibuzz.github.io/aviibuzz/img/logo.png');
     } else{
         $('.navbar').removeClass('bg-secondary text-secondary');
         $(".nav-link").addClass('text-white');
-        $('#logoImg').attr('src','./img/logoavii.png');
+        $('#logoImg').attr('src','https://aviibuzz.github.io/aviibuzz/img/logoavii.png');
     }
      if ($(window).scrollTop() > 1000) {
         $('header').addClass('invisible');
