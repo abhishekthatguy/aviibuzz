@@ -1,14 +1,25 @@
+
+
+
+ if ($(window).width() < 486){
+        alert("mobile");
+     $('.w-50').addClass('w-100 text-justify');
+     $('.display-3').addClass('display-4');
+    }
+    else {
+        alert("not mobile");
+    }
 // Sticky Header
 $(window).scroll(function () {
 
     if ($(window).scrollTop() > 100) {
         $('.navbar').addClass('bg-secondary text-secondary');
         $('.nav-link').removeClass('text-white');
-        $('#logoImg').attr('src','https://aviibuzz.github.io/aviibuzz/img/logo.png');
+        $('#logoImg').attr('src','./img/logo.png');
     } else{
         $('.navbar').removeClass('bg-secondary text-secondary');
         $(".nav-link").addClass('text-white');
-        $('#logoImg').attr('src','https://aviibuzz.github.io/aviibuzz/img/logoavii.png');
+        $('#logoImg').attr('src','./img/logoavii.png');
     }
      if ($(window).scrollTop() > 1000) {
         $('header').addClass('invisible');
