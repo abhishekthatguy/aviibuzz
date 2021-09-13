@@ -1,14 +1,49 @@
 
-
-
+const data=[];
+$('.alert').alert('close');
  if ($(window).width() < 486){
-        alert("mobile");
+//        alert("mobile");
      $('.w-50').addClass('w-100 text-justify');
      $('.display-3').addClass('display-4');
+//     $('.alert').alert();
     }
     else {
-        alert("not mobile");
+//        alert("not mobile");
+//        $('.alert').alert('close')
+        $('.w-50').removeClass('w-100 text-justify');
+     $('.display-3').removeClass('display-4');
     }
+
+//form submit
+
+$( "form" ).submit(function( event ) {
+  console.log( $( this ).serializeArray() );
+  event.preventDefault();
+    let temp=localStorage.getItem('data');
+    console.log('temp',temp);
+    
+//    const data=[];
+    console.log('data before',data);
+   
+    let tempData=$( this ).serializeArray();
+    const temObj=()=>tempData.map(x=>({[x.name]:x.value}));
+//    for(let value of temObj){
+//        console.log('value',value);
+//    }
+        
+//        data.push(temObj);
+ console.log(Array.isArray(temObj));
+        console.log('temObj', temObj());
+    
+    console.log('tempData',tempData);
+    console.log('data after',data)
+    
+//    data.push(tempData);
+    localStorage.setItem('data',JSON.stringify(data));
+});
+$('#handleQuery').click(function(){
+  submit("The paragraph was clicked.");
+});
 // Sticky Header
 $(window).scroll(function () {
 
@@ -28,21 +63,6 @@ $(window).scroll(function () {
     }
 });
 
-// Mobile Navigation
-//$('.mobile-toggle').click(function () {
-//    if ($('.header').hasClass('open-nav')) {
-//        $('.header').removeClass('open-nav');
-//    } else {
-//        $('.header').addClass('open-nav');
-//    }
-//});
-
-//$('.main_h li a').click(function () {
-//    if ($('.header').hasClass('open-nav')) {
-//        $('.navigation').removeClass('open-nav');
-//        $('.header').removeClass('open-nav');
-//    }
-//});
 
 // navigation scroll 
 $('nav a').click(function (event) {
