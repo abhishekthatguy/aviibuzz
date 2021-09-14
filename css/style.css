@@ -43,6 +43,10 @@ particle animation styling*/
     width: 100%;
     transform: translate(-50%, -50%);
 }
+.introduction{
+    font-family: 'Allison', cursive !important;
+    
+}
 
 
 #home > .hero_background_image {
