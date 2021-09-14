@@ -17,29 +17,25 @@ $('.alert').alert('close');
 //form submit
 
 $( "form" ).submit(function( event ) {
-  console.log( $( this ).serializeArray() );
-  event.preventDefault();
-    let temp=localStorage.getItem('data');
-    console.log('temp',temp);
-    
-//    const data=[];
-    console.log('data before',data);
-   
+//  event.preventDefault();
+     $('.alert').alert();
+    const data=[];
+    let temp=JSON.parse(localStorage.getItem('data'));
+    let arr={};
+    if(temp){
+        data=[...temp];
+    }
     let tempData=$( this ).serializeArray();
-    const temObj=()=>tempData.map(x=>({[x.name]:x.value}));
-//    for(let value of temObj){
-//        console.log('value',value);
-//    }
-        
-//        data.push(temObj);
- console.log(Array.isArray(temObj));
-        console.log('temObj', temObj());
-    
-    console.log('tempData',tempData);
-    console.log('data after',data)
-    
-//    data.push(tempData);
-    localStorage.setItem('data',JSON.stringify(data));
+    for (let value of tempData){
+            for (let key in value){
+                arr={...arr,[value.name]:value.value};
+                break;
+            }
+        }
+ 
+data.push(arr);
+ localStorage.setItem('data',JSON.stringify(data));
+   
 });
 $('#handleQuery').click(function(){
   submit("The paragraph was clicked.");
