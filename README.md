@@ -2,7 +2,7 @@
 My name is Abhishek Singh, 27-years-old, multi-specialist Front End Engineer with 3+ years of experience in Health Care, Construction, E-commerce & Logistics, and information & Technology domain, based in Gurgaon. I describe myself as a passionate learner, who looks forward to learning from everyone around me and is always open to learning new tech stacks.
 
 
-You can get more details on [MyWebsite](https://aviibuzz.github.io/aviibuzz/)
+You can get more details on [MyWebsite](https://aviibuzz.github.io/aviibuzz/) 
  ***
  
 I focused on the design and implementation of enterprise scaled business solutions. I have hands-on experience of designing, developing and troubleshooting large scale driven, multi-threaded applications like ERP, Virtual meeting System ,Automation Suite, PWA.
@@ -32,7 +32,7 @@ I focused on the design and implementation of enterprise scaled business solutio
 * Google fonts family [Allison, san-serif ] (https://fonts.googleapis.com/css2?family=Allison&display=swap)
 * mediquery for responsive at 468px and 768px 
 
-![get in touch] (https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
+! [get in touch] (https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
 
 
 
