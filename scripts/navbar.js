@@ -17,14 +17,10 @@ $('.alert').alert('close');
 //form submit
 
 $( "form" ).submit(function( event ) {
-//  event.preventDefault();
-     $('.alert').alert();
+  event.preventDefault();
     const data=[];
-    let temp=JSON.parse(localStorage.getItem('data'));
+    const temp=localStorage.getItem('data') ? JSON.parse(localStorage.getItem('data')) : [];
     let arr={};
-    if(temp){
-        data=[...temp];
-    }
     let tempData=$( this ).serializeArray();
     for (let value of tempData){
             for (let key in value){
@@ -33,8 +29,10 @@ $( "form" ).submit(function( event ) {
             }
         }
  
-data.push(arr);
- localStorage.setItem('data',JSON.stringify(data));
+temp.push(arr);
+  console.log(temp) ;
+ localStorage.setItem('data',JSON.stringify(temp));
+     $('.alert').alert();
    
 });
 $('#handleQuery').click(function(){
