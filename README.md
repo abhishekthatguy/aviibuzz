@@ -17,7 +17,7 @@ I focused on the design and implementation of enterprise scaled business solutio
 * CMS or WordPress setup.
 * Maintaince & Refactoring
 
-### Interested in working with me? Get in [touch] (https://aviibuzz.github.io/aviibuzz/#contact) and I’d be happy to talk to you.
+### Interested in working with me? Get in [touch](https://aviibuzz.github.io/aviibuzz/#contact) and I’d be happy to talk to you.
 
 
 
@@ -29,10 +29,10 @@ I focused on the design and implementation of enterprise scaled business solutio
 * Jquery - 3.2.1
 * Popper.js -1.12.9
 * particle.js 
-* Google fonts family [Allison, san-serif ] (https://fonts.googleapis.com/css2?family=Allison&display=swap)
+* Google fonts family [Allison, san-serif ](https://fonts.googleapis.com/css2?family=Allison&display=swap)
 * mediquery for responsive at 468px and 768px 
 
-! [get in touch](https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
+![get in touch](https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
 
 
 
