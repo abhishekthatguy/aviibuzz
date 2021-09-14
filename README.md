@@ -32,7 +32,7 @@ I focused on the design and implementation of enterprise scaled business solutio
 * Google fonts family [Allison, san-serif ] (https://fonts.googleapis.com/css2?family=Allison&display=swap)
 * mediquery for responsive at 468px and 768px 
 
-! [get in touch] (https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
+! [get in touch](https://drive.google.com/file/d/1FyyNZRfiup5W2uqK5v03PbcUpjl-3Z8u/view?usp=sharing)
 
 
 
