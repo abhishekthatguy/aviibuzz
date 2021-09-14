@@ -30,9 +30,10 @@ $( "form" ).submit(function( event ) {
         }
  
 temp.push(arr);
-  console.log(temp) ;
- localStorage.setItem('data',JSON.stringify(temp));
-     $('.alert').alert();
+localStorage.setItem('data',JSON.stringify(temp));
+     $('.alert').alert('show');
+    confirm('Thankyou for reaching out. I will be in touch asap.');
+    window.reload();
    
 });
 $('#handleQuery').click(function(){
