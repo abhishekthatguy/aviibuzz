@@ -3,6 +3,8 @@ My name is Abhishek Singh, 27-years-old, multi-specialist Front End Engineer wit
 
 
 You can get more details on [MyWebsite](https://aviibuzz.github.io/aviibuzz/) 
+
+Click ⭐if you like the project. Pull Request are highly appreciated. Follow me @aviibuzz for technical updates.
  ***
  
 I focused on the design and implementation of enterprise scaled business solutions. I have hands-on experience of designing, developing and troubleshooting large scale driven, multi-threaded applications like ERP, Virtual meeting System ,Automation Suite, PWA.
